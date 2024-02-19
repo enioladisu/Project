@@ -128,11 +128,12 @@ img{
     }
     nav{
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     nav h1{
         font-size: 50px;
         font-family: sans-serif;
+        margin-left: 10px;
     }
     ul{
         width: 100%;
@@ -163,6 +164,7 @@ img{
     }
     .resp{
         display: block;
+        margin-right: 10px;
     }
     .close{
         display: none;
