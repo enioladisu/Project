@@ -127,7 +127,8 @@ img{
         height: fit-content;
     }
     nav{
-        width: 100%;justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
     }
     nav h1{
         font-size: 50px;
