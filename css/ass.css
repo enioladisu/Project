@@ -129,6 +129,7 @@ img{
     nav{
         width: 100%;
         justify-content: space-between;
+        box-shadow: 0px 0px 5px ;
     }
     nav h1{
         font-size: 50px;
@@ -145,13 +146,15 @@ img{
         margin: 0;
         padding: 0;
         text-align: center;
-        margin-top: -300px;
+        margin-top: -350px;
     }
     li{
         width: 100%;
         display: block;
         height: 30px;
         margin: 0;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
     }
     li:hover{
         background-color: rgb(0, 255, 135);
