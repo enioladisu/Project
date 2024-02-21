@@ -129,6 +129,7 @@ img{
     nav{
         width: 100%;
         justify-content: space-between;
+        height: 30px;
         box-shadow: 0px 0px 5px ;
     }
     nav h1{
