@@ -129,7 +129,6 @@ img{
     nav{
         width: 100%;
         justify-content: space-between;
-        height: 30px;
         box-shadow: 0px 0px 5px ;
     }
     nav h1{
@@ -147,7 +146,7 @@ img{
         margin: 0;
         padding: 0;
         text-align: center;
-        margin-top: -350px;
+        margin-top: -400px;
     }
     li{
         width: 100%;
