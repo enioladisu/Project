@@ -1,34 +1,55 @@
-// let background = document.getElementsByTagName("body")[0]
-// let nav = document.querySelector("nav")
-// let a = document.querySelectorAll("a")[0]
-// let a1 = document.querySelectorAll("a")[1]
-// let a2 = document.querySelectorAll("a")[2]
-// let a3 = document.querySelectorAll("a")[3]
-// let container1 = document.querySelectorAll("div")[1]
-// let btn = document.querySelectorAll("div")[0]
-
-// btn.addEventListener("click", function(){
-//     background.classList.toggle("dark")
-//     nav.classList.toggle("dark")
-//     a.classList.toggle("dark")
-//     a1.classList.toggle("dark")
-//     a2.classList.toggle("dark")
-//     a3.classList.toggle("dark")
-//     container1.classList.toggle("dark")
-// })
-
 let ul = document.querySelector("ul")
-let open = document.querySelector(".open")
-let close = document.querySelector(".close")
+let openDropDown = document.querySelector(".open")
+let closeDropDown = document.querySelector(".close")
+let bg = document.querySelector("body")
+let off = document.querySelector(".off")
+let on = document.querySelector(".on")
+let off1 = document.querySelector(".off1")
+let on1 = document.querySelector(".on1")
+let nav = document.querySelector("nav")
 
-
-open.addEventListener("click", function(){
+function close(){
+    ul.style.marginTop = "-400px"
+    openDropDown.style.display = "block"
+    closeDropDown.style.display = "none"
+}
+function open(){
     ul.style.marginTop = "0px"
-    open.style.display = "none"
-    close.style.display = "block"
-})
-close.addEventListener("click", function(){
-    ul.style.marginTop = "-300px"
-    open.style.display = "block"
-    close.style.display = "none"
-})
+    openDropDown.style.display = "none"
+    closeDropDown.style.display = "block"
+}
+function darkMode1(){
+    bg.style.backgroundColor = "black"
+    bg.style.color = "white"
+    ul.style.backgroundColor = "black"
+    ul.style.color = "white"
+    off1.style.display = "none"
+    on1.style.display = "block"
+}
+function lightMode1(){
+    bg.style.backgroundColor = "white"
+    bg.style.color = "black"
+    ul.style.backgroundColor = "white"
+    ul.style.color = "black"
+    off1.style.display = "block"
+    on1.style.display = "none"
+}
+function darkMode(){
+    bg.style.backgroundColor = "black"
+    bg.style.color = "white"
+    off.style.display = "none"
+    on.style.display = "block"
+}
+function lightMode(){
+    bg.style.backgroundColor = "white"
+    bg.style.color = "black"
+    off.style.display = "block"
+    on.style.display = "none"
+}
+
+openDropDown.addEventListener("click", open)
+closeDropDown.addEventListener("click", close)
+off.addEventListener("click", darkMode)
+on.addEventListener("click", lightMode)
+off1.addEventListener("click", darkMode1)
+on1.addEventListener("click", lightMode1)
